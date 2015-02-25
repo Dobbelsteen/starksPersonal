@@ -1,7 +1,38 @@
 /*
-Main Styles
+Main Styles and tweaks
 =============================================================================*/
 body {
 	font-family: 'Roboto', Helvetica, sans-serif;
 	font-size: 1.5em;
+	margin-top: 55px;
+}
+
+article {
+	margin-top: 8px;
+	margin-bottom: 3px;
+}
+
+.navbar-default {
+	background-color: #03A9F4;
+	border-color: #0277BD;
+}
+
+.breadcrumb {
+	background-color: #E1F5FE;
+}
+
+.breadcrumb>li+li:before {
+	color: #171221;
+}
+
+.breadcrumb>.active {
+	color: #171221;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-link {
+	color: white;
 }
