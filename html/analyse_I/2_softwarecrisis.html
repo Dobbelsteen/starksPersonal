@@ -11,18 +11,18 @@
 	</head>
 
 	<body cz-shortcut-listen = "true">
-		<div class="container">
-			<nav class="navbar navbar-default navbar-fixed-top">
+		
+			<nav class="navbar navbar-default">
 			<div class="container">
 				<a href="analyse_I.html" class="navbar-brand">Analyse I</a>
 				<p class="navbar-text navbar-right"><a href="../../index.html" class="navbar-link"></a></p>
 			</div>
 			</nav>
-
+			<div class="container">
 			<section>
-				<h1>Het softwareontwikkelingsproces</h1>
+				<h1 >Het softwareontwikkelingsproces</h1>
 					<article>
-						<h2>De software crisis</h2>
+						<h2 id="softwarecrisis">De software crisis</h2>
 						<p>
 							In het boek, <em>"The Mythical Man-Month"</em> beschrijft Frederick Brooks een wet die later bekend werd als Brooks' Law:<br>
 							<em><strong>"Adding manpower to a late software project makes it later"</strong></em><br>
@@ -45,7 +45,7 @@
 					</article>
 
 					<article>
-						<h2>Oorzaken software crisis</h2>
+						<h2 id="oorzakenSoft">Oorzaken software crisis</h2>
 						<p>
 							Er zijn twee soorten problemen die je kan tegen komen in de ontwikkeling van software:
 						</p>
@@ -57,7 +57,7 @@
 					</article>
 
 					<article>
-						<h3>Tamme problemen</h3>
+						<h3 id="tammeProblemen">Tamme problemen</h3>
 						<p>
 							Tamme problemen zijn stabiele en goed gedefinieerde problemen. Vaak zijn deze problemen goed afgebakend en is er een pasklare oplossing.
 						</p>
@@ -72,7 +72,7 @@
 					</article>
 
 					<article>
-						<h3>Wicked problems</h3>
+						<h3 id="wickedProblemen">Wicked problems</h3>
 						<p>
 							Wicked problemen daarentegen zijn vaag, je snapt pas het probleem eenmaal de oplossing ervoor geformuleerd is. Het is vaak onduidelijk wanneer ze opgelost zijn en ze zijn uniek voor de omgeving waarin je werkt.<br>
 							Denk hierbij aan:
@@ -85,7 +85,7 @@
 					</article>
 
 					<article>
-						<h3>One wicked problem: <strong>clients</strong></h3>
+						<h3 id="clients">One wicked problem: <strong>clients</strong></h3>
 						<p>
 							Een groot wicked probleem is dat de opdrachtgevers vaak zelf niet goed weten wat ze willen. Of zoals Brooks het vermeldt:
 						</p>
@@ -136,6 +136,94 @@
 							<em>
 								Het softwareontwikkelproces is een kader dat vastlegt hoe een softwareproject wordt aangepakt en een methode om de activiteiten in verband met creatie, oplevering en onderhoud van softwaresystemen te organiseren.
 							</em>
+						</p>
+					</article>
+
+					<article>
+						<h2>Onderdelen van een SOOP</h2>
+						<p>
+							Je kan verschillende onderdelen onderscheiden bij het softwareontwikkelingsproces:
+						</p>
+
+						<ol>
+							<li>De analyse</li>
+							<li>Het ontwerp</li>
+							<li>Implementatiefase</li>
+							<li>TestFase</li>
+							<li>Integratie</li>
+							<li>Onderhoudsfase</li>
+						</ol>
+
+						<p>
+							In wat volgt beschrijven we deze fasen kort:
+						</p>
+					</article>
+
+					<article>
+						<h3>Analyse</h3>
+						<p>
+							De studie en de beschrijving van het probleem: we moeten achterhalen wat het systeem moet doen en wat de randvoorwaarden zijn. We zorgen ervoor dat het probleem vertaald wordt in een taal die zowel verstaanbaar is voor de klant, als voor de mensen die het eigenlijk ontwerpen en implementeren voor zich zullen nemen. De analyse kan verschillende componenten omvatten. We noemen er hier een aantal op en zullen verder doorheen de cursus verduidelijkt worden. 
+						</p>
+
+						<ul>
+							<li>Use Cases (UC)</li>
+							<li>User stories</li>
+							<li>Opmaken van een domeinmodel</li>
+							<li>Sequentiediagrammen</li>
+							<li>...</li>
+						</ul>
+
+						<p>
+							Er moet gelet worden dat de software:
+						</p>
+
+						<ul>
+							<li>voldoet aan de taken en functies beschreven in de Use Cases en functionele specificaties</li>
+							<li>voldoet aan alle technische vereisten</li>
+							<li>eenvoudig aan te passen is wanneer functionele eisen wijzigen</li>
+						</ul>
+					</article>
+
+					<article>
+						<h3>Ontwerp</h3>
+						<p>
+							Deze fase omvat het specificeren van de nodige onderdelen van het te bouwen systeem: welke componenten zijn er nodig, kan ik hergebruiken en hoe werken die samen met elkaar. Het ontwerpmodel dient als abstractie van de broncode; het is een (gedetailleerd) plan dat beschrijft hoe de broncode wordt gestructureerd en geschreven. Het ontwerpmodel bestaat uit klassen, gestructureerd in modules en subsystemen, met duidelijk beschreven interfaces. Het bevat ook de beschrijving over hoe deze klassen met elkaar samenwerken.
+						</p>
+					</article>
+
+					<article>
+						<h3>Implementeren</h3>
+						<p>
+							Dit is eigenlijke coderen van het systeem: we vertellen in een taal verstaanbaar voor de computer hoe die de verschillende functies moet uitvoeren. Hierin komt naar voor:
+
+							<ul>
+								<li>Het vastleggen van de organisatie van de broncode;</li>
+								<li>Het implementeren van subsystemen;</li>
+								<li>het vastleggen van klassen en objecten;</li>
+								<li>Het testen van de ontwikkelde componenten (Unittesten)</li>
+								<li>Het integreren van de resultaten van individuen tot een systeem</li>
+							</ul>
+						</p>
+					</article>
+
+					<article>
+						<h3>Testen &amp; Valideren</h3>
+						<p>
+							In de analysefase worden een aantal testscenario's opgemaakt. In de testfase gaan we dus na of de software werkt en verwacht aan de verwachtingen van de klant. Hier komt naar voor:
+						</p>
+
+						<ul>
+							<li>Het controleren van de interactie tussen verschillende object;</li>
+							<li>Het controleren van de integratie van verschillende componenten;</li>
+							<li>Het controleren van het systeem om te kijken of alle requirements juist zijn ge&iuml;mplementeerd;</li>
+							<li>Het in kaart brengen en prioritiseren van defecten.</li>
+						</ul>
+					</article>
+
+					<article>
+						<h3>Integratie</h3>
+						<p>
+							
 						</p>
 					</article>
 			</section>
