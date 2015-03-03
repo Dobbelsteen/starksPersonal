@@ -7,8 +7,12 @@ body {
 }
 
 article {
-	margin-top: 8px;
+	margin-top: 40px;
 	margin-bottom: 3px;
+}
+
+.navbar {
+	border-radius: 0;
 }
 
 .navbar-default {
