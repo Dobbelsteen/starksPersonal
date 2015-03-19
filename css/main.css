@@ -11,6 +11,10 @@ article {
 	margin-bottom: 3px;
 }
 
+article>ul {
+	padding-top: 40px;
+}	
+
 .navbar {
 	border-radius: 0;
 }
